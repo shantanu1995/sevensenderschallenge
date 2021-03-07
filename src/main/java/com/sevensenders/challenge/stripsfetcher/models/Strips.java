@@ -2,6 +2,8 @@ package com.sevensenders.challenge.stripsfetcher.models;
 
 import java.util.Date;
 
+// Strips Model Class
+
 public class Strips {
 
     private final String pictureurl;
