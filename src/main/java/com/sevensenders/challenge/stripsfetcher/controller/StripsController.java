@@ -9,7 +9,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
@@ -20,8 +19,6 @@ import java.util.*;
 @RestController
 public class StripsController {
 
-    private static final String template = "Hello, %s!";
-
     private static final Logger logger= LoggerFactory.getLogger(StripsController.class);
 
     public StripsController(){
@@ -29,7 +26,7 @@ public class StripsController {
     }
 
     @GetMapping(value="/strips", produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<Strips> strips(@RequestParam(value = "name", defaultValue = "World") String name) throws IOException, JSONException, ParseException {
+    public List<Strips> strips() throws IOException, JSONException, ParseException {
         JSONArray jsonarray=new Webcomic().fetchbody("https://xkcd.com/info.0.json");
         List<Strips> xkcd= new ArrayList<>();
         for(int i=0;i<jsonarray.length();i++){
