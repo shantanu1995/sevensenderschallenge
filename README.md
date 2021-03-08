@@ -26,3 +26,5 @@ Steps to explicitly run a test:
 
 1. For explicitly running the tests you need to import the project into intellij IDE
 2. Then run the test present under src/main/test
+
+[Note:- If the test doesn't run from intellij try going to File->Settings->Build,Execution,Deployment->Build Tools->Gradle and set Run tests using:Intellij. Then try rerunning the tests again]
