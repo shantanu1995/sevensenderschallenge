@@ -20,3 +20,9 @@ The response should contain the following data for each entry:
 - publishing date
 
 Sort the resulting feed by publishing date from recent to older.
+
+
+Steps to explicitly run a test:
+
+1. For explicitly running the tests you need to import the project into intellij IDE
+2. Then run the test present under src/main/test
