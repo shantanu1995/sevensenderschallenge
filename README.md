@@ -28,3 +28,5 @@ Steps to explicitly run a test:
 2. Then run the test present under src/main/test
 
 [Note:- If the test doesn't run from intellij try going to File->Settings->Build,Execution,Deployment->Build Tools->Gradle and set Run tests using:Intellij. Then try rerunning the tests again]
+
+[Note: The code compatibility is on java 1.8]
